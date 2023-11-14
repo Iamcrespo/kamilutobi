@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.project-container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-bar{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 1.1rem; 
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 0 20px;
+    z-index: 1;
+}
+.nav-menu{
+    margin: 0 auto;
+}
+.nav-menu ul{
+    padding: 20px;
+    margin: 0 auto;
+}
+.nav-menu > ul li {
+    display: inline-block;
+    
+}
+.nav-menu > ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+.nav-menu ul li a:hover{
+    color: yellow;
+}
+.nav-menu ul li::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: yellow;
+    display:none;
+}
+.nav-menu ul li:hover::after{
+    display: block;
+}
+.nav-bar .menubar i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    
+}
+#click{
+    display: none;
+}
+
+.header{
+    height: 700px;
+    color: #fff;
+    background-image: url(images/pexels-junior-teixeira-2047905.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.header-content  h1{
+    padding-top: 20%;
+    font-size: 5rem;
+    font-weight: 800;
+    
+}
+.header-content h2{
+    display: inline-block;
+    margin-top: 2%;
+    font-weight: 700;
+    font-size: 3rem;
+    color: yellow;
+}
+.header-content button {
+    color: #fff;
+    background-color: blue;
+    padding: 10px 30px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 3%;
+}
+.aboutme-container {
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    padding: 6% 0 8%;
+}
+.aboutme{
+    width: 80%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 2px 2px 2px #b8b8b8;
+}
+.profile{
+    width: 50%;
+    padding: 30px;
+}
+.personal-info{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.personal-img img{
+    width: 150px;
+    height: 155px;
+    border-radius: 8px;
+    object-position: center;
+    object-fit: cover;
+}
+.personal-name{
+    width: 100%;
+    padding: 0 30px;
+    font-weight: 700;
+    
+}
+.personal-name span{
+    font-weight: 400;
+}
+.skills{
+    margin-top: 30px;
+    font-weight: 700;
+}
+.aboutme-content{
+    width: 50%;
+    padding: 30px;
+    line-height: 30px;
+}
+.aboutme-details{
+    margin-top: 35px;
+}
+.boots{
+    margin-top: 10px;
+}
+
+.services{
+    height: 1000px;
+    background-color: rgb(240, 240, 240);
+    
+}
+.services .title{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.title h1 {
+    font-weight:bolder
+}
+.services-list{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+.service-card{
+    width: 335px;
+    height: 360px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+}
+.service-card .card-icon{
+    padding-top: 15px;
+}
+.service-card .card-icon img {
+    width: 220px;
+    height: 180px;
+    object-position: center;
+    object-fit: cover;
+}
+.service-card .card-content{
+    padding: 10px;
+}
+.card-content p{
+    font-size: 0.9rem;
+}
+.card-content span{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.project{
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-image: url(images/counters-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay;
+    /* background-attachment: fixed; */
+    padding-top: 5%;
+}
+
+.project-list{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto ;
+}
+.project-no{
+    width: 200px;
+    text-align: center;
+}
+.project-no span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.project .project-img img{
+    width: 120px;
+    height: auto;
+}
+
+.portfolio-container{
+    height: 90vh;
+    background-color: rgb(240, 240, 240);
+    padding-top: 5%;
+}
+.portfolio{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.portfolio-title{
+    text-align: center;
+} 
+.portfolio-title h1{
+    font-weight:bolder;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.card-body{
+    position: relative;
+    background-color: #fff;
+}
+.card-body img{
+    width: 45px;
+    height: auto;
+    position: absolute;
+    left: 80%;
+    top: 8%;
+}
+.card-title{
+    font-weight: 700;
+}
+.card{
+    width: 20rem;
+    overflow: hidden;
+}
+.card-img img{
+    height: 14rem;
+    object-fit: cover;
+}
+.card-img{
+    transition: transform 0.9s ease;
+}
+.card-img:hover{
+    transform: scale(1.25);
+}
+
+.review-container{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(images/pexels-djordje-petrovic-2102416.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    color: #fff;
+    
+}
+.carousel-item{
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+.caption{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.review-body img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.review-body span{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.message-container{
+    height: 900px;
+    /* background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay; */
+    background-image: url(images/pexels-negative-space-34140.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    padding-top: 8%;
+}
+.message-box{
+    width: 80%;
+    height: 650;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.contact-box{
+    width: 100%;
+    padding: 40px;
+}
+.contact-box-content{
+    margin-top: 10%;
+    line-height: 35px;
+}
+.contact-header{
+    font-weight: 500;
+}
+.contact-header::after{
+    content: '';
+    width: 20%;
+    height: 4px;
+    margin-top: 10px;
+    background-color: blue;
+}
+.contact-header::after{
+    display: block;
+}
+.message-box input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+.message-box button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    font-weight: 600;
+}
+.message-box button:hover {
+    background-color: rgb(2, 2, 179);
+    color: #fff;
+}
+form{
+    text-align: center;
+    margin-top: 15%;
+    font-size: smaller;
+}
+.contact-info img{
+    width: auto;
+    height: 20px;
+    margin-right: 15px;
+}
+
+/* [data-scroll]{
+    transition: all 2s;
+}
+[data-scroll="in"]{
+    opacity: 1;
+    transform:translateX(0);
+}
+[data-scroll="out"]{
+    opacity: 0;
+    transform: translateX(-200px);
+} */
+
+
+@media only screen and (max-width:900px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* For mobile phones: */
+    .nav-bar{
+        height: 50px;
+        /* padding: 20px 0; */
+    }
+    .nav-menu ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        text-align: center ;
+        transition: all 0.7s ease;
+    }
+    #click:checked ~ .nav-menu ul{
+        left: 0;
+    }
+    .nav-bar .menubar i{
+        display: block;
+    }
+    #click:checked ~ .menubar i:before{
+        content: "\f00d";
+    }
+    .nav-menu ul li{
+        display: block;
+
+    }
+    .nav-menu ul li a{
+        display: block;
+    }
+    
+
+    .header-content{
+        width: 100%;
+    }
+    .header-content h1{
+        font-size: 3rem;
+    }
+    .header-content h2{
+        font-size: 2rem;
+    }
+
+    .project-container{
+        width: 100%;
+    }
+   
+    .aboutme-container{
+        width: 100%;
+    }
+
+    .profile{
+        width: 100%;
+    }
+    .aboutme{
+        width: 90%;
+        height: auto;
+        display: block;
+        margin-top: 30px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .personal-info{
+        width: 100%;
+        display: block;
+    }
+    .personal-name{
+        width: auto;
+        display: inline;
+    }
+    .aboutme-content{
+        width: auto;
+    }
+
+    .services{
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+       
+    }
+    .services-list{
+        width: 100%;
+        display: block;
+    }
+    .service-card{
+        width: auto;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .project{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .project-list{
+        display: block;
+    }
+    .project-no{
+        margin: 0 auto;
+    }
+
+    .portfolio{
+        width: 90%;
+    }
+    .portfolio-container{
+        height: auto;
+        padding-bottom: 20%;
+    }
+    .card-container{
+        display: block;
+    }
+    .card{
+        width: auto;
+        margin-top: 40px;
+    }
+
+    .message-container{
+        width: auto;
+        height: auto;
+    }
+    .message-box{
+        width: 90%;
+        height: auto;
+        display: block;
+    }
+    
+  }
